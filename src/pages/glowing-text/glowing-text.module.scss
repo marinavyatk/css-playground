@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,700&display=swap");
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  background-color: #201e1e;
+  color: #8c8282;
+  font-family: "Kanit", Arial, sans-serif;
+}
+
+.text {
+  text-transform: uppercase;
+  user-select: none;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+
+  label {
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px solid #393333;
+    margin: 4px;
+    box-shadow:
+      4px 4px 6px rgba(0, 0, 0, 0.2),
+      inset 0 0 15px rgba(0, 0, 0, 0.1);
+
+    &:has(input:checked) {
+      color: yellow;
+      text-shadow:
+        0 0 15px yellow,
+        0 0 30px yellow;
+      animation: glow 1.5s linear infinite;
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media (max-width: 680px) {
+  .text {
+    font-size: 24px;
+    gap: 15px;
+
+    label {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      border-width: 2px;
+      margin: 2px;
+    }
+  }
+}

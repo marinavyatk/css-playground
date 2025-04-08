@@ -1,0 +1,17 @@
+.page {
+  background-color: #201e1e;
+  padding: 100px 200px;
+  min-height: 100dvh;
+  color: white;
+
+  h1 {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+
+.listContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
