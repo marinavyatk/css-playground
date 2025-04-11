@@ -1,0 +1,32 @@
+.wrapper {
+  width: 100%;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  box-shadow: var(--outer-box-shadow);
+  background-color: var(--color-primary);
+}
+
+.input {
+  width: 100%;
+  flex-grow: 1;
+
+  &::placeholder {
+    color: #aaa;
+  }
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.round {
+  border-radius: var(--border-radius-round);
+}
+
+.square {
+  border-radius: var(--border-radius-square);
+}

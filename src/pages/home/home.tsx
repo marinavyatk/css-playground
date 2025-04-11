@@ -10,6 +10,9 @@ export const Home = () => {
         <li>
           <Link to={paths.glowingText}>Glowing Text</Link>
         </li>
+        <li>
+          <Link to={paths.neumorphism}>Neumorphism Ui-kit</Link>
+        </li>
       </ul>
     </div>
   );

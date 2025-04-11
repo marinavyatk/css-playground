@@ -1,0 +1,34 @@
+.button {
+  padding: 2px;
+  box-shadow: var(--outer-box-shadow);
+  background-color: var(--color-primary);
+  white-space: nowrap;
+
+  &:focus-visible {
+    outline: 1px solid white;
+  }
+
+  img,
+  svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.round {
+  border-radius: var(--border-radius-round);
+}
+
+.square {
+  border-radius: var(--border-radius-square);
+}
+
+.inner {
+  padding: 15px;
+  border-radius: inherit;
+
+  &:active {
+    box-shadow: var(--inner-box-shadow);
+  }
+}
